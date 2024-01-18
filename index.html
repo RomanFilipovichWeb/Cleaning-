@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300i,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Клининговая Компания</title>
+</head>
+<body>
+	
+	<header class="header" id="header">
+		<div class="container">
+			<div class="header__item">
+				<div class="header__logo">
+					<a href="#intro" data-scroll="#intro"><img src="images/logo.png" alt=""></a>
+				</div>
+				
+				<nav class="navbtn">
+					<button class="menu__toggle" type="button">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<div class="navbtn__menu">
+						<a href="#" data-scroll="#service">наши услуги</a>
+						<a href="#" data-scroll="#advantages">преимущества</a>
+						<a href="#" data-scroll="#video">видеопрезентация</a>
+						<a href="#" data-scroll="#work">как мы работаем</a>
+						<a href="#" data-scroll="#reviews">отзывы</a>
+						<a href="#" data-scroll="#questions">Вопросы</a>
+						<a href="#" data-scroll="#footer">контакты</a>
+					</div>
+				</nav>
+				
+			</div>
+		</div>
+	</header>
+	
+	
+	<div class="intro" id="intro">
+		<div class="container">
+			<div class="intro__item">
+				<h1 class="intro__bigtitle">клининговая <br> компания</h1>
+				<h2 class="intro__title">наши услуги </h2>
+				<button id="modal-btn" class="btn" type="button">оставить заявку</button>
+				
+				<div class="modal" id="my-modal">
+					<div class="modal-content">
+						<span class="close">&times;</span>
+						<div class="modal-title">оставьте заявку на уборку <span>прямо сейчас!</span> </div>
+						<form class="form form-modal">
+							<input class="form__input form__input-modal" type="name" name="name" placeholder="Ваше имя">
+							<input class="form__input form__input-modal form__input--cl form__input--cl-modal" type="name" name="name" placeholder="Телефон">
+							<div class="form__submit">
+								<button class="form__btn form__btn-modal" type="button">оставить заявку</button>
+							</div>
+					</form>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+	
+	<section class="section" id="service">
+		<div class="container">
+			<div class="section__header">
+				<h2 class="section__title about__img">наши услуги</h2>
+			</div>
+			
+			<div class="service">
+				<div class="service__item">
+					<div class="service__img">
+						<img src="images/cleaning.png" alt="">
+					</div>
+					<div class="service__info">
+						<div class="service__name">генеральная уборка</div>
+					</div>
+				</div>
+				
+				<div class="service__item ">
+					<div class="service__img">
+						<img src="images/repair-tools.png" alt="">
+					</div>
+					<div class="service__info">
+						<div class="service__name">уборка после ремонта</div>
+					</div>
+				</div>
+				
+				<div class="service__item ">
+					<div class="service__img">
+						<img src="images/room-key.png" alt="">
+					</div>
+					<div class="service__info">
+						<div class="service__name">уборка служебных поьещений</div>
+					</div>
+				</div>
+				
+				<div class="service__item ">
+					<div class="service__img">
+						<img src="images/sofa.png" alt="">
+					</div>
+					<div class="service__info">
+						<div class="service__name">химчиска мебели</div>
+					</div>
+				</div>
+				
+				<div class="service__item ">
+					<div class="service__img">
+						<img src="images/windows.png" alt="">
+					</div>
+					<div class="service__info">
+						<div class="service__name">мойка окон и витрин</div>
+					</div>
+				</div>
+				
+				<div class="service__item">
+					<div class="service__img">
+						<img src="images/cleaning-spray.png" alt="">
+					</div>
+					<div class="service__info">
+						<div class="service__name">дезинфекция</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+	
+	
+	<section class="section section--work" id="advantages">
+		<div class="container">
+			<div class="section__header">
+				<h2 class="section__title section__title-header">как мы работаеи</h2>
+			</div>
+			
+			<div class="work">
+				<div class="work__item">
+					<div class="work__inner">
+						<img class="work__img" src="images/work.png" alt="">
+						<div class="work__info">
+							<div class="work__title">Вы оставляете заявку на сайте или связываетесь с нами по телефону</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="work__item">
+					<div class="work__inner">
+						<img class="work__img" src="images/work2.png" alt="">
+						<div class="work__info">
+							<div class="work__title">Менеджер уточняет детали заказа </div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="work__item">
+					<div class="work__inner">
+						<img class="work__img" src="images/work3.png" alt="">
+						<div class="work__info">
+							<div class="work__title">Мы выезжаем на объект</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+	
+	
+	<section class="section" id="video">
+		<div class="container">
+			
+			<div class="video">
+				<div class="video__item video__item--first">
+					<div class="video__content">
+						<div class="video__title">Видеопрезентация</div>
+						<div class="video__text">От слов к делу.<br> Ознакомьтесь с нашей работой <br> своими глазами.</div>
+					</div>
+				</div>
+				<div class="video__item video__item--second">
+					<div class="laptop">
+						<img class="video__img" src="images/laptop.png" alt="">
+						<iframe width="775" height="460" src="https://www.youtube.com/embed/xU4Uyc3VKFk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+	
+	
+	<section class="section section--request">
+		<div class="container">
+			
+			<div class="request">
+				<div class="request__header">
+					<div class="request__title">Оставьте заявку на уборку <span>прямо сейчас!</span></div>
+					<p class="request__text">и получите купон на участие в розыгрыше пылесоса</p>
+				</div>
+			</div>
+			
+			<form class="form">
+				<input class="form__input" type="name" name="name" placeholder="Ваше имя">
+				<input class="form__input form__input--cl" type="name" name="name" placeholder="Телефон">
+				<div class="form__submit">
+					<button id="modal-btn" class="form__btn" type="button">оставить заявку</button>
+				</div>
+			</form>
+			
+		</div>
+	</section>
+	
+	
+	<section class="section" id="work">
+		<div class="container">
+			<div class="section__header">
+				<h2 class="section__title section__title-header">почему стоит обратиться к нам?</h2>
+			</div>
+			
+			<div class="why">
+				<div class="why__item">
+					<div class="why__img">
+						<img src="images/why.jpg" alt="">
+					</div>
+					<div class="why__info">
+						<p class="why__title">принимаем заявки 24/7/365</p>
+					</div>
+				</div>
+				
+				<div class="why__item">
+					<div class="why__img">
+						<img src="images/why2.jpg" alt="">
+					</div>
+					<div class="why__info">
+						<p class="why__title">собственный инвентарь для уборки</p>
+					</div>
+				</div>
+				
+				<div class="why__item">
+					<div class="why__img">
+						<img src="images/why3.jpg" alt="">
+					</div>
+					<div class="why__info">
+						<p class="why__title">гарантируем безопасность вашего имущества</p>
+					</div>
+				</div>
+				
+				<div class="why__item">
+					<div class="why__img">
+						<img src="images/why4.jpg" alt="">
+					</div>
+					<div class="why__info">
+						<p class="why__title">убрано более 1000+ объектов</p>
+					</div>
+				</div>
+				
+				<div class="why__item">
+					<div class="why__img">
+						<img src="images/why5.jpg" alt="">
+					</div>
+					<div class="why__info">
+						<p class="why__title">уборка в тот же день</p>
+					</div>
+				</div>
+				
+				<div class="why__item">
+					<div class="why__img">
+						<img src="images/why6.jpg" alt="">
+					</div>
+					<div class="why__info">
+						<p class="why__title">все наши сотрудники аттестованы</p>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+	
+	
+	<div class="about">
+			<div class="about__item">
+				<div class="about__col">
+					<h2 class="about__title">2548</h2>
+					<p class="about__text">довольных клиентов</p>
+				</div>
+				<div class="about__col">
+					<h2 class="about__title">135</h2>
+					<p class="about__text">сотрудников в штате</p>
+				</div>
+				<div class="about__col">
+					<h2 class="about__title">368</h2>
+					<p class="about__text">убрано объектов</p>
+				</div>
+			</div>
+	<div>
+	
+	
+	<section class="section" id="questions">
+		<div class="container">
+			<div class="section__header">
+				<h2 class="section__title section__title-header">Часто задаваемые вопросы</h2>
+			</div>
+			
+			<div class="questions">
+				<div class="questions__item" data-collapse="#wedo_1">
+					<div class="questions__header">Можно ли заказать химчистку мягких игрушек?</div>
+					<div class="questions__content" id="wedo_1">
+						Можно. Мягкие игрушки очищаются с помощью ЭКО-химии и детского стирального порошка.
+					</div>
+				</div>
+				
+				<div class="questions__item" data-collapse="#wedo_2">
+					<div class="questions__header">Делаете ли Вы уборку в коттеджах?</div>
+					<div class="questions__content" id="wedo_2">
+						Да. Мы работаем в Санкт-Петербурге и Лен. области. Производим также очистку фасадов коттеджей.
+					</div>
+				</div>
+				
+				<div class="questions__item" data-collapse="#wedo_3">
+					<div class="questions__header">Есть ли у Вас сертификаты на моющую химию?</div>
+					<div class="questions__content" id="wedo_3">
+						Да. Есть все необходимые документы и сертификаты.
+					</div>
+				</div>
+				
+				<div class="questions__item" data-collapse="#wedo_4">
+					<div class="questions__header">Можете ли Вы помочь освободить квартиру от хлама?</div>
+					<div class="questions__content" id="wedo_4">
+						Конечно. Сбор, вынос и вывоз (при необходимости) мусора. А также устранение неприятного запаха.
+					</div>
+				</div>
+				
+				<div class="questions__item" data-collapse="#wedo_5">
+					<div class="questions__header">Не вредно ли находится в квартире во время уборки?</div>
+					<div class="questions__content" id="wedo_5">
+						Во время уборки производится мытьё окон . И в убираемом помещении может быть сквозняк. А также запах моющей химии.
+					</div>
+				</div>
+				
+				<div class="questions__item" data-collapse="#wedo_6">
+					<div class="questions__header">Можно ли получить скидку , если стать постоянным клиентом?</div>
+					<div class="questions__content" id="wedo_6">
+						Конечно. Скидочная пластиковая карта с 10 % скидкой ожидает Вас
+					</div>
+				</div>
+				
+				<div class="questions__item" data-collapse="#wedo_8">
+					<div class="questions__header">Работаете ли Вы в выходные?</div>
+					<div class="questions__content" id="wedo_8">
+						Да, работаем в обычном режиме.
+					</div>
+				</div>
+				
+				<div class="questions__item" data-collapse="#wedo_12">
+					<div class="questions__header">Возможна ли уборка в ночное время?</div>
+					<div class="questions__content" id="wedo_12">
+						Наша компания "CLEANING-BC" работает круглосуточно. Однако Вам нужно учесть работу клинингового оборудования в ночное время (пылесос и др.)
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+	
+	
+	<section class="section--work" id="reviews">
+		<div class="container">
+			<div class="section__header">
+				<h2 class="section__title section__title-header">Отзывы о нас</h2>
+			</div>
+			
+			<div class="slider">
+				<div class="slider__item">
+					<div class="slider__inner">
+						<img class="slider__img" src="images/avatar.png" alt="">
+						<div class="slider__content">
+							<h3 class="slider__name">Normand Shannon</h3>
+							<p class="slider__text">Very cool specialists. worked with us. Professionals from God. The kitchen was great. And the children have something to do there, which is very important for us</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="slider__item">
+					<div class="slider__inner">
+						<img class="slider__img" src="images/avatar.png" alt="">
+						<div class="slider__content">
+							<h3 class="slider__name">Normand Shannon</h3>
+							<p class="slider__text">Very cool specialists. worked with us. Professionals from God. The kitchen was great. And the children have something to do there, which is very important for us</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="slider__item">
+					<div class="slider__inner">
+						<img class="slider__img" src="images/avatar.png" alt="">
+						<div class="slider__content">
+							<h3 class="slider__name">Normand Shannon</h3>
+							<p class="slider__text">Very cool specialists. worked with us. Professionals from God. The kitchen was great. And the children have something to do there, which is very important for us</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+	
+	
+	<section class="section">
+		<div class="container">
+			<div class="section__header">
+				<h2 class="section__title section__title-header">Наши клиенты</h2>
+			</div>
+			
+			<div class="logos">
+				<div class="logos__item">
+					<img class="logos__img" src="images/1.png" alt="">
+				</div>
+				
+				<div class="logos__item">
+					<img class="logos__img" src="images/2.png" alt="">
+				</div>
+				
+				<div class="logos__item">
+					<img class="logos__img" src="images/3.png" alt="">
+				</div>
+				
+				<div class="logos__item">
+					<img class="logos__img" src="images/4.png" alt="">
+				</div>
+				
+				<div class="logos__item">
+					<img class="logos__img" src="images/5.png" alt="">
+				</div>	
+				
+				<div class="logos__item">
+					<img class="logos__img" src="images/6.png" alt="">
+				</div>	
+			</div>
+			
+		</div>
+	</section>
+	
+	
+	<footer class="footer" id="footer">
+		<div class="container">
+		
+			<div class="footer__item">
+			
+				<div class="footer__col">
+					<div class="footer__title">О нас</div>
+					
+					<div class="footer__link">
+						<ul>
+							<li>О компании</li>
+							<li>Контакты</li>
+							<li>Частные клиенты</li>
+							<li>Отзывы</li>
+							<li>Фотоотчет</li>
+							<li>Карта сайта</li>
+							<li>Корпоративным клиентам</li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="footer__col">
+					<div class="footer__title">Наши основные услуги</div>
+					
+					<div class="footer__link">
+						<ul>
+							<li>Мойка окон и лоджи</li>
+							<li>Уборка домов</li>
+							<li>Уборка квартир</li>
+							<li>Химчистка</li>
+							<li>Шлифовка пола</li>
+							<li>Уборка територии</li>
+							<li>Другие услуги</li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="footer__col">
+					<div class="footer__title">Контакты Cleaning</div>
+					
+					<address class="footer__address">
+						г. Москва:
+						ул. Кировоградская, дом 12/2
+						ул. 9-я Северная линия, дом 8
+					</address>
+					
+					<div class="footer__operating ">
+						<div class="footer__contact-title">Режим работы</div>
+						Понедельник-Воскресенье: <br>
+						с 08:00 до 22:00
+					</div>
+					
+					<div class="footer__contact">
+						<div class="footer__contact-title">Связь с нами</div>
+						<a href="tel: 8 (499) 649-74-19">Телефон: 8 (499) 649-74-19</a>
+						<a href="mailito:info@cleaning-moscow.ru">Телефон: 8 (499) 649-74-19</a>
+					</div>
+					
+					
+				</div>
+				
+				<div class="footer__col">
+					<div class="footer__title">Поделитесь с друзьями!</div>
+					
+					<div class="footer__social">
+						<a href="#" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+						<a href="#" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+						<a href="#" target="_blank">
+                            <i class="fab fa-google-plus-g"></i>
+                        </a>
+					</div>
+					
+					<div class="footer__Payment">
+						<div class="footer__contact-title">Способы оплаты</div>
+						<img class="footer__img" src="images/footer-logo.png" alt="">
+					</div>
+					
+					<div class="footer__text">
+						<p>Мы принимаем карты наличные и денежные переводы. По конкретным способам оплаты уточняйте у операторов. </p>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</footer>
+	
+	
+	<script src="js/slick.min.js"></script>
+	<script src="js/script.js"></script>
+	
+</body>
+</html>
